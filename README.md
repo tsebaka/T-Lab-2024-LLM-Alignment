@@ -2,7 +2,7 @@
 
 ## Mini-batch итогов
 Сначала я реализовал метод reinforce (sorry trl в вашем коде я нереально запутался) и потом добавил метод WARP (а именно EMA, Slerp, LITI).
-Результаты были очень понятны (увеличиваешь бету, модель хуже генерит хорошие комменты, перетягивая всё на ревард, соответственно avg_reward_before примерно равно avg_reward_after, а avg_kl_before &asymp; avg_kl_after)
+Результаты были очень понятны (увеличиваешь бету, модель хуже генерит хорошие комменты, перетягивая всё на kl loss, соответственно avg_reward_before &asymp; avg_reward_after и avg_kl_before &asymp; avg_kl_after)
 
 ## Ultra-mini-batch того что я понял
 
