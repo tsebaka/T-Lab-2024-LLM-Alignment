@@ -58,6 +58,12 @@ k = 10
 ## How to run
 sad, но я не успел написать скрипты для тренировки sft модельки со всеми экспериментами поэтому:
 
+**Все ноутбуки можно запустить на kaggle (только после reward, нужно сохранить reward модельку и всё)
+run reward_model.ipynb
+run warp.ipynb
+run warp_rloo.ipynb**
+
+---
 Потренировать reward модельку на парах (взял по 1000 с единичек и нулей получился лям сэмплов (кстати скорее всего это не оч правильно потому что в реальности человеческая разметка в том же instruct gpt была около 1000))
 ```
 sh run.sh
@@ -66,11 +72,6 @@ sh run.sh
 run warp.ipynb
 Дальше, ноутбук с WARP + RLOO
 run rloo.ipynb
-
-Все ноутбуки можно запустить на kaggle (только после reward, нужно сохранить reward модельку и всё)
-run reward_model.ipynb
-run warp.ipynb
-run warp_rloo.ipynb
 
 
 ## Hardware
