@@ -67,11 +67,10 @@ run warp.ipynb
 Дальше, ноутбук с WARP + RLOO
 run rloo.ipynb
 
-Ссылки на kaggle notebooks (для легкого запуска всего)
-[REWARD]()
-после этого этапа  в аутпуте каггла будет save model'ька её нужно перекинуть в некст ноутбук (presave я сделал)
-[WARP]()
-[WARP_RLOO]()
+Все ноутбуки можно запустить на kaggle (только после reward, нужно сохранить reward модельку и всё)
+run reward_model.ipynb
+run warp.ipynb
+run warp_rloo.ipynb
 
 
 ## Hardware
