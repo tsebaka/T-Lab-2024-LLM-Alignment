@@ -1,0 +1,28 @@
+seed: 42
+
+
+dataset:
+    path: stanfordnlp/imdb
+    num_positive_pairs: 1000
+    num_negative_pairs: 1000
+
+reward: 
+    path: distilbert/distilbert-base-cased
+    num_labels: 1
+    
+    output_dir: .
+    save_strategy: no   
+    num_train_epochs: 1
+    report_to: none     
+    learning_rate: 1e-6
+    per_device_train_batch_size: 512
+        
+    save: True
+    
+sft: 
+    path: lvwerra/gpt2-imdb
+    
+    reward_path: reward_model
+    
+optimizer:
+    lr: 1e-5

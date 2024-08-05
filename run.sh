@@ -1,0 +1,1 @@
+python -m train --config-dir config --config-name config
