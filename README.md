@@ -54,4 +54,4 @@ run rloo.ipynb
 
 ## Hardware
 немного печально что такие резы с такой карточкой, но да)
-Nvidia A100 80gb
+- GPU: 1x NVIDIA A100 80gb
