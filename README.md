@@ -1,6 +1,6 @@
 # T-Lab-2024-LLM-Alignment
 
-![meme](https://github.com/tsebaka/T-Lab-2024-LLM-Alignment/blob/main/meme/memes.jpg?raw=true)
+![meme](https://github.com/tsebaka/T-Lab-2024-LLM-Alignment/blob/main/meme/memes.png?raw=true)
 
 ## Mini-batch итогов
 - Изначально я взял пары и обучил на них reward модельку (одной эпохи было достаточно чтобы выбить 80% качества на test выборке с sign трешхолдом для класса (это я так проверил норм она или нет)) и на всякий случай я закинул её на яндекс диск (model, conf)
