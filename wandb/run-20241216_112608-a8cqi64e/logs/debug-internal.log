@@ -1,0 +1,19 @@
+{"time":"2024-12-16T11:26:08.693546444+03:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-12-16T11:26:08.693617644+03:00","level":"INFO","msg":"created symlink","path":"/home/jovyan/zoloev-city/t-lab-nlp-aligment/source/wandb/run-20241216_112608-a8cqi64e/logs/debug-core.log"}
+{"time":"2024-12-16T11:26:08.82083581+03:00","level":"INFO","msg":"created new stream","id":"a8cqi64e"}
+{"time":"2024-12-16T11:26:08.82089719+03:00","level":"INFO","msg":"stream: started","id":"a8cqi64e"}
+{"time":"2024-12-16T11:26:08.82096927+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"a8cqi64e"}
+{"time":"2024-12-16T11:26:08.8210076+03:00","level":"INFO","msg":"sender: started","stream_id":"a8cqi64e"}
+{"time":"2024-12-16T11:26:08.8210463+03:00","level":"INFO","msg":"handler: started","stream_id":"a8cqi64e"}
+{"time":"2024-12-16T11:26:09.178193956+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-16T11:26:43.256836997+03:00","level":"INFO","msg":"stream: closing","id":"a8cqi64e"}
+{"time":"2024-12-16T11:26:43.256915507+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-16T11:26:43.257966287+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-16T11:26:43.463767212+03:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-12-16T11:26:43.463812272+03:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-12-16T11:26:43.463828081+03:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-12-16T11:26:44.595593279+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-16T11:26:44.832070144+03:00","level":"INFO","msg":"handler: closed","stream_id":"a8cqi64e"}
+{"time":"2024-12-16T11:26:44.832126974+03:00","level":"INFO","msg":"sender: closed","stream_id":"a8cqi64e"}
+{"time":"2024-12-16T11:26:44.832108394+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"a8cqi64e"}
+{"time":"2024-12-16T11:26:44.833461083+03:00","level":"INFO","msg":"stream: closed","id":"a8cqi64e"}

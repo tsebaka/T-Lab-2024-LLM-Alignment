@@ -1,0 +1,62 @@
+  0%|                                                                                                                                                                                         | 0/1954 [00:00<?, ?it/s]You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Could not estimate the number of tokens of the input, floating-point operations will not be computed
+ 42%|██████████████████████████████████████████████████████████████████████████▏                                                                                                    | 829/1954 [28:49<39:13,  2.09s/it]Traceback (most recent call last):
+{'loss': 0.6914, 'grad_norm': 0.2694534659385681, 'learning_rate': 9.84646878198567e-07, 'epoch': 0.02}
+{'loss': 0.6823, 'grad_norm': 0.36312544345855713, 'learning_rate': 9.692937563971341e-07, 'epoch': 0.03}
+{'loss': 0.6654, 'grad_norm': 0.690365195274353, 'learning_rate': 9.53940634595701e-07, 'epoch': 0.05}
+{'loss': 0.6237, 'grad_norm': 1.255395770072937, 'learning_rate': 9.385875127942682e-07, 'epoch': 0.06}
+{'loss': 0.5315, 'grad_norm': 1.6315499544143677, 'learning_rate': 9.232343909928352e-07, 'epoch': 0.08}
+{'loss': 0.4177, 'grad_norm': 1.4366073608398438, 'learning_rate': 9.078812691914022e-07, 'epoch': 0.09}
+{'loss': 0.3248, 'grad_norm': 1.2054024934768677, 'learning_rate': 8.925281473899693e-07, 'epoch': 0.11}
+{'loss': 0.259, 'grad_norm': 1.3081750869750977, 'learning_rate': 8.771750255885363e-07, 'epoch': 0.12}
+{'loss': 0.2173, 'grad_norm': 1.1070971488952637, 'learning_rate': 8.618219037871032e-07, 'epoch': 0.14}
+{'loss': 0.1814, 'grad_norm': 1.128705382347107, 'learning_rate': 8.464687819856704e-07, 'epoch': 0.15}
+{'loss': 0.1536, 'grad_norm': 0.9211321473121643, 'learning_rate': 8.311156601842374e-07, 'epoch': 0.17}
+{'loss': 0.1335, 'grad_norm': 1.40931236743927, 'learning_rate': 8.157625383828045e-07, 'epoch': 0.18}
+{'loss': 0.1162, 'grad_norm': 1.1302669048309326, 'learning_rate': 8.004094165813715e-07, 'epoch': 0.2}
+{'loss': 0.0997, 'grad_norm': 0.8482502102851868, 'learning_rate': 7.850562947799385e-07, 'epoch': 0.21}
+{'loss': 0.0859, 'grad_norm': 1.1963846683502197, 'learning_rate': 7.697031729785056e-07, 'epoch': 0.23}
+{'loss': 0.0771, 'grad_norm': 1.0210893154144287, 'learning_rate': 7.543500511770727e-07, 'epoch': 0.25}
+{'loss': 0.0639, 'grad_norm': 0.9890698194503784, 'learning_rate': 7.389969293756398e-07, 'epoch': 0.26}
+{'loss': 0.0531, 'grad_norm': 0.7609546184539795, 'learning_rate': 7.236438075742067e-07, 'epoch': 0.28}
+{'loss': 0.0497, 'grad_norm': 0.7736191749572754, 'learning_rate': 7.082906857727737e-07, 'epoch': 0.29}
+{'loss': 0.0423, 'grad_norm': 0.8818495273590088, 'learning_rate': 6.929375639713408e-07, 'epoch': 0.31}
+{'loss': 0.0401, 'grad_norm': 0.9473137259483337, 'learning_rate': 6.775844421699078e-07, 'epoch': 0.32}
+{'loss': 0.0341, 'grad_norm': 0.5941172242164612, 'learning_rate': 6.622313203684749e-07, 'epoch': 0.34}
+{'loss': 0.029, 'grad_norm': 0.48100268840789795, 'learning_rate': 6.46878198567042e-07, 'epoch': 0.35}
+{'loss': 0.0271, 'grad_norm': 0.6514254808425903, 'learning_rate': 6.31525076765609e-07, 'epoch': 0.37}
+{'loss': 0.0257, 'grad_norm': 0.414094477891922, 'learning_rate': 6.161719549641761e-07, 'epoch': 0.38}
+{'loss': 0.0226, 'grad_norm': 0.5215374827384949, 'learning_rate': 6.00818833162743e-07, 'epoch': 0.4}
+{'loss': 0.02, 'grad_norm': 0.8728887438774109, 'learning_rate': 5.8546571136131e-07, 'epoch': 0.41}
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jovyan/zoloev-city/t-lab-nlp-aligment/source/train.py", line 293, in <module>
+    train_reward(config)
+    ^^^^^^
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           ^^^^^^
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            ^^^^^^^^^^
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 119, in run
+    ret = run_job(
+          ^^^^^^^^
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/zoloev-city/t-lab-nlp-aligment/source/train.py", line 287, in main
+  File "/home/jovyan/zoloev-city/t-lab-nlp-aligment/source/train.py", line 60, in train_reward
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/transformers/trainer.py", line 2527, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

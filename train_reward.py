@@ -1,15 +1,10 @@
-import sys
-import os
-sys.path.insert(0, "/home/jovyan/.local/share/virtualenvs/ptls-experiments-w-dEu3oS/lib/python3.8/site-packages")
-os.environ["OMP_NUM_THREADS"] = "4"
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
-
 import numpy as np
 import pandas as pd
 import torch
 import transformers
 import datasets
 import hydra
+import random
 
 from tqdm import tqdm
 from datasets import load_dataset, Dataset, DatasetDict
@@ -17,7 +12,14 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from trl import RewardTrainer, RewardConfig
 from torch.optim import AdamW
-from src.utils import get_train_reward_pairs
+from src.utils import (
+    get_train_reward_pairs,
+    generate_prompt,
+    compute_reward,
+    compute_kl_loss,
+    slerp,
+    interpolate_weights
+)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -41,6 +43,9 @@ def train_reward(
     training_args = RewardConfig(
         output_dir=config.reward.output_dir,
         save_strategy="no",
+        logging_dir="./logs",
+        logging_steps=30,
+        max_steps=760,
         num_train_epochs=config.reward.num_train_epochs,  
         report_to=config.reward.report_to,  
         learning_rate=config.reward.learning_rate,
@@ -57,40 +62,15 @@ def train_reward(
     trainer.train()
 
     if config.reward.save:
-        model.save_pretrained("reward_model")
-        
-        
-def train_sft(
-    config,
-):
-    sft_model = GPT2LMHeadModel.from_pretrained(
-        config.sft.path
-    ).to(device)
-    sft_tokenizer = GPT2Tokenizer.from_pretrained(
-        config.sft.path
-    )
+        model.save_pretrained("models/reward_model")
 
-    sft_tokenizer.add_special_tokens({'pad_token': '[PAD]'})
-    sft_tokenizer.pad_token = sft_tokenizer.eos_token
-    sft_model.generation_config.pad_token_id = sft_tokenizer.pad_token_id
 
-    reward_model = AutoModelForSequenceClassification.from_pretrained(
-        config.reward.path, 
-        num_labels=config.reward.num_labels,
-    )
-    reward_tokenizer = AutoTokenizer.from_pretrained(
-        config.reward.path
-    )
-    
-    
 @hydra.main(version_base=None, config_path="config")
 def main(config):
     np.random.seed(config.seed)
     torch.manual_seed(config.seed)
     
     train_reward(config)
-    train_sft(config)
-    
     
     
 if __name__ == '__main__':

@@ -1,0 +1,43 @@
+  0%|                                                                                                                                                                                          | 0/760 [00:00<?, ?it/s]You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Could not estimate the number of tokens of the input, floating-point operations will not be computed
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 760/760 [26:32<00:00,  2.10s/it]
+{'loss': 0.6914, 'grad_norm': 0.26893723011016846, 'learning_rate': 9.605263157894737e-07, 'epoch': 0.02}
+{'loss': 0.6826, 'grad_norm': 0.3554060459136963, 'learning_rate': 9.210526315789473e-07, 'epoch': 0.03}
+{'loss': 0.6673, 'grad_norm': 0.6513511538505554, 'learning_rate': 8.815789473684209e-07, 'epoch': 0.05}
+{'loss': 0.6326, 'grad_norm': 1.1192721128463745, 'learning_rate': 8.421052631578947e-07, 'epoch': 0.06}
+{'loss': 0.5587, 'grad_norm': 1.6136882305145264, 'learning_rate': 8.026315789473685e-07, 'epoch': 0.08}
+{'loss': 0.4601, 'grad_norm': 1.5697910785675049, 'learning_rate': 7.631578947368421e-07, 'epoch': 0.09}
+{'loss': 0.3715, 'grad_norm': 1.3450647592544556, 'learning_rate': 7.236842105263158e-07, 'epoch': 0.11}
+{'loss': 0.3056, 'grad_norm': 1.3100800514221191, 'learning_rate': 6.842105263157895e-07, 'epoch': 0.12}
+{'loss': 0.2639, 'grad_norm': 1.0697524547576904, 'learning_rate': 6.447368421052632e-07, 'epoch': 0.14}
+{'loss': 0.2288, 'grad_norm': 1.145456314086914, 'learning_rate': 6.052631578947368e-07, 'epoch': 0.15}
+{'loss': 0.2012, 'grad_norm': 1.0819292068481445, 'learning_rate': 5.657894736842104e-07, 'epoch': 0.17}
+{'loss': 0.183, 'grad_norm': 1.3003674745559692, 'learning_rate': 5.263157894736842e-07, 'epoch': 0.18}
+{'loss': 0.1674, 'grad_norm': 1.126940369606018, 'learning_rate': 4.868421052631579e-07, 'epoch': 0.2}
+{'loss': 0.1522, 'grad_norm': 0.9548018574714661, 'learning_rate': 4.4736842105263156e-07, 'epoch': 0.21}
+{'loss': 0.14, 'grad_norm': 1.4660903215408325, 'learning_rate': 4.0789473684210524e-07, 'epoch': 0.23}
+{'loss': 0.1348, 'grad_norm': 1.2804535627365112, 'learning_rate': 3.684210526315789e-07, 'epoch': 0.25}
+{'loss': 0.1225, 'grad_norm': 1.3605411052703857, 'learning_rate': 3.2894736842105264e-07, 'epoch': 0.26}
+{'loss': 0.1104, 'grad_norm': 1.0945006608963013, 'learning_rate': 2.894736842105263e-07, 'epoch': 0.28}
+{'loss': 0.1112, 'grad_norm': 1.135366439819336, 'learning_rate': 2.5e-07, 'epoch': 0.29}
+{'loss': 0.104, 'grad_norm': 1.28909432888031, 'learning_rate': 2.1052631578947366e-07, 'epoch': 0.31}
+{'loss': 0.1065, 'grad_norm': 1.2788913249969482, 'learning_rate': 1.7105263157894736e-07, 'epoch': 0.32}
+{'loss': 0.1004, 'grad_norm': 1.1014301776885986, 'learning_rate': 1.3157894736842104e-07, 'epoch': 0.34}
+{'loss': 0.097, 'grad_norm': 0.8974723815917969, 'learning_rate': 9.210526315789473e-08, 'epoch': 0.35}
+{'loss': 0.0955, 'grad_norm': 1.69220769405365, 'learning_rate': 5.2631578947368416e-08, 'epoch': 0.37}
+{'loss': 0.0952, 'grad_norm': 0.7347202301025391, 'learning_rate': 1.3157894736842104e-08, 'epoch': 0.38}
+{'train_runtime': 1594.9832, 'train_samples_per_second': 243.965, 'train_steps_per_second': 0.476, 'train_loss': 0.26900792780675387, 'epoch': 0.39}
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 200/200 [00:00<00:00, 53693.96it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25000/25000 [00:00<00:00, 26335.95it/s]
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/home/jovyan/zoloev-city/t-lab-nlp-aligment/source/train.py", line 295, in main
+    train_sft(config)
+  File "/home/jovyan/zoloev-city/t-lab-nlp-aligment/source/train.py", line 113, in train_sft
+    I = config.I
+        ^^^^^^^^
+omegaconf.errors.ConfigAttributeError: Key 'I' is not in struct
+    full_key: I
+    object_type=dict
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

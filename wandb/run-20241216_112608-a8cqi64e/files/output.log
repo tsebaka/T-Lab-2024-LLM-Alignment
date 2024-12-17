@@ -1,0 +1,38 @@
+  0%|                                                                                                                                                                                          | 0/489 [00:00<?, ?it/s]You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/home/jovyan/.local/lib/python3.11/site-packages/torch/nn/parallel/parallel_apply.py:79: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.device(device), torch.cuda.stream(stream), autocast(enabled=autocast_enabled):
+Could not estimate the number of tokens of the input, floating-point operations will not be computed
+  2%|███▉                                                                                                                                                                             | 11/489 [00:30<20:11,  2.53s/it]Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jovyan/zoloev-city/t-lab-nlp-aligment/source/train.py", line 68, in <module>
+    main()
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           ^^^^^^
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            ^^^^^^^^^^
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 119, in run
+    ret = run_job(
+          ^^^^^^^^
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/zoloev-city/t-lab-nlp-aligment/source/train.py", line 64, in main
+    train_reward(config)
+  File "/home/jovyan/zoloev-city/t-lab-nlp-aligment/source/train.py", line 53, in train_reward
+    trainer.train()
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/jovyan/.mlspace/envs/gigachat_cuda123/lib/python3.11/site-packages/transformers/trainer.py", line 2527, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

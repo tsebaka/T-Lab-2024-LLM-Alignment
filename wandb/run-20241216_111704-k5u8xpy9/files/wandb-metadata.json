@@ -1,0 +1,61 @@
+{
+  "os": "Linux-5.15.0-1027-nvidia-x86_64-with-glibc2.35",
+  "python": "3.11.10",
+  "startedAt": "2024-12-16T08:17:04.910047Z",
+  "args": [
+    "--config-dir",
+    "config",
+    "--config-name",
+    "config"
+  ],
+  "program": "-m train",
+  "email": "ozoloevwork@gmail.com",
+  "root": "/home/jovyan/zoloev-city/t-lab-nlp-aligment/source",
+  "host": "zoloev-another-server-0",
+  "username": "jovyan",
+  "executable": "/home/jovyan/.mlspace/envs/gigachat_cuda123/bin/python",
+  "cpu_count": 128,
+  "cpu_count_logical": 256,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "1888423047168",
+      "used": "651453816832"
+    }
+  },
+  "memory": {
+    "total": "2164137525248"
+  },
+  "cpu": {
+    "count": 128,
+    "countLogical": 256
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.3"
+}
